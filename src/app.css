@@ -1,8 +1,16 @@
-#app {
+* {
+  box-sizing: border-box;
+}
+
+.app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  border: solid 2px black;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 .logo {
@@ -22,4 +30,18 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.header {
+  border: solid 2px red
+}
+
+.article-list {
+  border: solid 2px green;
+}
+
+.article-card {
+  border: solid 2px blue;
+  padding-bottom: 15px;
+  
 }
