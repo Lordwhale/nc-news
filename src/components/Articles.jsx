@@ -8,6 +8,7 @@ const Articles = () => {
 
     useEffect(() => {
         setLoading(true)
+        
         fetch('https://my-nc-news-ew4b.onrender.com/api/articles')
         .then((response) =>{
             return response.json()
@@ -33,8 +34,8 @@ const Articles = () => {
         <div>  
             <h2>News from around the globe!</h2>
                 <ul className="article-list">
-                    {articles.map((article) => {
-                        return <Articlecard key={article.article_id} article={article} />         
+                    {articles.map((articleData) => {
+                        return <Articlecard key={articleData.article_id} articleData={articleData} />         
                     })}
                 </ul>
         </div>
